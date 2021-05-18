@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>септик</title>
+ </head>
+<body>
+
+<?php
+
+   session_start();
+
+   echo "Hello  ", $_SESSION["name"];
+
+?>
+
+
+</body>
+</html>
