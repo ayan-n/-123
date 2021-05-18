@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>семеси</title>
+ </head>
+<body>
+
+<?php
+
+   session_start();
+
+   if (isset($_REQUEST["submit"])) {
+      $_SESSION["name"] = $_REQUEST["name"];
+      var_dump($_SESSION);
+   }
+
+?>
+
+<form action='' method='GET'>
+   <input name="name">
+   <input type='submit' name='submit'>
+</form>
+
+
+</body>
+</html>
